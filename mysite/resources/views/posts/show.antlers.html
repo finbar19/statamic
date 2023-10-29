@@ -1,8 +1,8 @@
-<div class="container py-8 md:py-12">
-    <div class="max-w-3xl mx-auto space-y-6">
+<div class="container py-10 md:py-12">
+    <div class="max-w-4xl mx-auto space-y-6">
         {{ partial:partials/post_categories }}
         {{ partial:components/heading size="h2" :label="title" center="true" }}
-        {{ partial:partials/author post_show="true" }}
+        
     </div>
 
     {{# Featured Image #}}
@@ -14,6 +14,9 @@
     {{ content }}
         {{ partial src="sets/{type}" }}
     {{ /content }}
+    <div class="max-w-3xl mx-auto space-y-6">
+        {{ partial:partials/author post_show="true" }}
+    </div>
 </div>
 
 {{ partial:partials/related_posts }}
